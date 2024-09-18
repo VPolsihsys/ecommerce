@@ -1,0 +1,22 @@
+#video-container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+#video {
+  width: 100%;
+  height: auto;
+}
+#overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+#overlay img {
+  width: 200px;
+  height: auto;
+  display: none;
+}

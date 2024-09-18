@@ -1,0 +1,819 @@
+.homepage .section0 {
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.homepage .section0 video {
+  min-width: 100%;
+}
+
+.homepage .section0 .text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.homepage .section0 .text h1 {
+  position: absolute;
+  text-transform: uppercase;
+  left: 50%;
+  transform: translate(-50%);
+  top: 35%;
+  font-size: 60px;
+  font-weight: 900;
+  color: #f1eeee;
+}
+
+.homepage .section0 .text h2 {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 50%;
+  font-size: 40px;
+  font-weight: 900;
+  color: #f1eeee;
+}
+
+.homepage .section0 .text p {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 10px 0;
+  color: #f1eeee;
+  transition: transform 0.3s ease;
+  position: absolute;
+}
+
+.homepage .section0 .text .p1 {
+  left: 5%;
+  top: 50%;
+}
+
+.homepage .section0 .text .p2 {
+  left: 30%;
+  bottom: 10%;
+}
+
+.homepage .section0 .text .p3 {
+  left: 60%;
+  top: 70%;
+}
+
+.homepage .section0 .text .p4 {
+  left: 80%;
+  top: 40%;
+}
+
+/*hero*/
+
+.homepage .hero {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 90vh;
+  margin-top: 100vh;
+}
+
+.homepage .container1 {
+  width: 60%;
+  margin: 0;
+  padding: 0 40px;
+}
+
+.homepage .container2 {
+  width: 40%;
+  margin: 0;
+  padding: 0 40px;
+}
+
+.homepage .container1 p {
+  font-size: 16px;
+  color: #333;
+  margin: 10px 0;
+  width: 95%;
+}
+
+.homepage .container1 h1 {
+  font-size: 40px;
+  margin: 20px 0;
+  font-weight: bolder;
+  width: 90%;
+}
+
+.homepage .container1 p:last-of-type {
+  font-size: 18px;
+  margin: 20px 0;
+  width: 100%;
+}
+
+.homepage .container1 .bottom {
+  margin-top: 20px;
+  display: flex;
+  width: 100%;
+}
+
+.homepage .container1 .bottom .card {
+  width: calc(50% - 10px);
+  margin: 10px auto;
+}
+
+.homepage .container1 .bottom .card .icon {
+  font-size: 30px;
+}
+
+.homepage .container1 .bottom .card h1 {
+  font-size: 22px;
+  margin: 10px 0;
+}
+
+.homepage .container1 .bottom .card p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.homepage .container2 img {
+  border-radius: 20px;
+  height: 450px;
+  width: 100%;
+}
+
+/*form*/
+.homepage .form1 {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 10px auto;
+  height: 450px;
+  padding: 20px;
+}
+
+.homepage .form1 .form-img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.homepage .form-img img {
+  width: 100%;
+  height: auto;
+  padding: 0 20px;
+}
+
+.homepage .form1 form {
+  height: 400px;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #88888848;
+}
+
+.homepage .form1 form h1 {
+  font-size: 38px;
+  font-weight: 900;
+  margin: 10px 0;
+}
+
+.homepage .form1 form .form-content {
+  margin: 20px 0;
+}
+
+.homepage .form1 form .form-content .inputs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.homepage .form1 form .form-content .inputs .search-input {
+  width: 98%;
+  padding: 15px;
+  margin-right: 5px;
+}
+
+.homepage .form1 form .form-content .search-input {
+  width: 100%;
+  padding: 15px;
+  margin: 15px 0;
+  border: none;
+  border-radius: 4px;
+  background-color: white;
+  color: #2e2e2e;
+}
+
+.homepage .form1 form .form-content .search-input::placeholder {
+  color: #666;
+}
+
+.homepage .form1 form button[type="button"] {
+  background-color: #cf0000;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100px;
+}
+
+.homepage .form1 button[type="button"]:hover {
+  background-color: #ba0000;
+}
+
+.homepage .form1 .form-img {
+  width: 90%;
+}
+
+/* Modal */
+
+.quomodal {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.quomodal .quomodal-content {
+  background-color: #f1eeee;
+  margin: 10% auto;
+  padding: 20px 10px;
+  height: max-content;
+  max-height: 700px;
+  border: 1px solid #888;
+  width: 100%;
+  max-width: 700px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.quomodal .quomodal-content .close {
+  top: 0%;
+  position: relative;
+  color: #cf0000;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.quomodal .quomodal-content .close:hover,
+.quomodal .quomodal-content .close:focus {
+  color: rgb(213, 4, 4);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*works*/
+
+.homepage .works {
+  margin: 40px auto;
+  padding: 20px;
+  width: 90%;
+}
+
+.homepage .works h2 {
+  color: #333;
+  font-size: 38px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.homepage .works p {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.homepage .works .works-container {
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.homepage .works .container {
+  border: 1px solid #a9a9a951;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 10px;
+  width: 400px;
+  max-width: 400px;
+}
+
+.homepage .works .container img {
+  width: 200px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.homepage .works .container h3 {
+  color: #333;
+  font-size: 24px;
+  margin: 10px;
+}
+
+.homepage .works .container b {
+  font-weight: bold;
+}
+
+.homepage .works .container p {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.homepage .works button[type="button"] {
+  background-color: rgb(155, 0, 0);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 120px;
+  text-align: left;
+  margin: 0 20px;
+}
+
+/*services*/
+
+.homepage .service-container {
+  width: 100%;
+  margin: 30px auto;
+  text-align: center;
+  padding: 20px 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.homepage .prices-container {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+}
+
+.homepage .service-container h1 {
+  text-align: center;
+  font-size: 38px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.homepage .services-container .product-details {
+  display: none;
+}
+
+/* Show product details in modal */
+.modal .product-details {
+  display: block;
+}
+
+/* Modal styles */
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal .modal-content {
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  padding: 40px 20px;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  position: relative;
+}
+
+.modal .modal-content .moveimages {
+  width: 50%;
+}
+
+.modal .modal-content .moveimages .modal-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.modal .modal-content .moveimages .modal-image {
+  width: 100%;
+  height: 450px;
+  border-radius: 10px;
+}
+
+.modal .modal-content .moveimages .moreimg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal .modal-content .moveimages .moreimg .im {
+  width: 140px;
+  height: 140px;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.modal .modal-content .moveimages .moreimg .im:hover {
+  transform: scale(1.1);
+}
+
+.modal .product-details-container {
+  width: 45%;
+}
+
+.modal .close {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  cursor: pointer;
+  font-size: 30px;
+  padding: 10px;
+}
+
+/* Chat button */
+#chatButton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border: none;
+  background-color: rgb(155, 0, 0); /* Button color */
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  z-index: 9999;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  outline: none; /* Remove outline on button */
+}
+
+#chatButton:hover {
+  background-color: rgb(196, 0, 49); /* Hover color */
+}
+
+@media (max-width: 768px) {
+  .homepage .section0 {
+    top: 100px;
+    margin-bottom: 30px;
+    height: fit-content;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .homepage .section0 video {
+    min-width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .homepage .section0 .text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+
+  .homepage .section0 .text h1 {
+    position: relative;
+    left: 0%;
+    transform: translate(0%);
+    top: 10%;
+    font-size: 20px;
+    font-weight: 900;
+    color: #f1eeee;
+  }
+
+  .homepage .section0 .text h2 {
+    position: relative;
+    left: 0%;
+    transform: translate(0%);
+    top: 5%;
+    font-size: 14px;
+    font-weight: 900;
+    color: #f1eeee;
+    margin-bottom: 40px;
+  }
+
+  .homepage .section0 .text p {
+    font-size: 12px;
+    margin: 5px 0;
+    position: relative;
+  }
+
+  .homepage .section0 .text .p1 {
+    left: 0;
+    top: 0%;
+  }
+
+  .homepage .section0 .text .p2 {
+    left: 0;
+    top: 0%;
+  }
+
+  .homepage .section0 .text .p3 {
+    left: 0;
+    top: 0%;
+  }
+
+  .homepage .section0 .text .p4 {
+    left: 0;
+    top: 0%;
+  }
+}
+
+@media (max-width: 768px) {
+  .homepage .hero {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    margin-top: 20vh;
+  }
+
+  .homepage .container1,
+  .homepage .container2 {
+    width: 100%;
+    margin: 0;
+    padding: 0 10px;
+  }
+
+  .homepage .container1 p {
+    font-size: 16px;
+    margin: 10px 0;
+    width: 95%;
+    padding: 0 10px;
+  }
+
+  .homepage .container1 h1 {
+    font-size: 20px;
+    margin: 20px 0;
+    text-align: left;
+    font-weight: bolder;
+    padding: 0 10px;
+    width: 90%;
+  }
+
+  .homepage .container1 p:last-of-type {
+    font-size: 16px;
+  }
+
+  .homepage .container1 .bottom {
+    margin-top: 10px;
+  }
+
+  .homepage .container1 .bottom .card {
+    width: calc(50% - 10px);
+    margin: 10px auto;
+  }
+
+  .homepage .container1 .bottom .card .icon {
+    font-size: 24px;
+  }
+
+  .homepage .container1 .bottom .card h1 {
+    font-size: 18px;
+    padding: 0;
+  }
+
+  .homepage .container1 .bottom .card p {
+    font-size: 14px;
+    padding: 0;
+  }
+
+  .homepage .container2 img {
+    border-radius: 20px;
+    height: auto;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  /*form*/
+  .homepage .form1 {
+    flex-direction: column;
+    margin: 10px auto;
+    align-items: center;
+    height: auto;
+    padding: 20px 10px;
+  }
+
+  .homepage .form1 .form-img {
+    width: 100%;
+  }
+
+  .homepage .form-img img {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 15px 0;
+  }
+
+  .homepage .form1 form {
+    height: auto;
+    width: 95%;
+    margin: 15px auto;
+    padding: 20px;
+  }
+
+  .homepage .form1 form h1 {
+    font-size: 28px;
+    margin: 10px 0;
+  }
+
+  .homepage .form1 form .form-content {
+    margin: 15px 0;
+  }
+
+  .homepage .form1 form .form-content .inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .homepage .form1 form .form-content .inputs .search-input {
+    width: 100%;
+    padding: 14px;
+    margin-right: 0;
+  }
+
+  .homepage .form1 form .form-content .search-input {
+    width: 100%;
+    padding: 14px;
+    margin: 10px 0;
+    border-radius: 4px;
+  }
+}
+
+@media (max-width: 768px) {
+  .homepage .works {
+    margin: 10px auto;
+    padding: 20px 10px;
+    width: 100%;
+  }
+
+  .homepage .works h2 {
+    font-size: 28px;
+  }
+
+  .homepage .works .works-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .homepage .works .container {
+    margin: 20px 0;
+    flex-direction: column;
+    padding: 20px 10px;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .homepage .works .container img {
+    width: 160px;
+    margin-bottom: 15px;
+  }
+
+  .homepage .works .container h3 {
+    font-size: 20px;
+  }
+
+  .homepage .works .container p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .homepage .service-container {
+    width: 100%;
+    margin: 10px auto;
+    text-align: center;
+    padding: 20px 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .homepage .service-container h1,
+  h1 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 20px 0;
+  }
+
+  .homepage .services-container .product-details {
+    display: none;
+  }
+
+  /* Show product details in modal */
+  .modal .product-details {
+    display: block;
+  }
+
+  /* Modal styles */
+  .modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .modal .modal-content {
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 40px 20px;
+  }
+
+  .modal .modal-content .moveimages {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal .modal-content .moveimages .modal-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px;
+    margin-left: 20px;
+  }
+
+  .modal .modal-content .moveimages .modal-image {
+    width: 100%;
+    height: 320px;
+    margin: 0 auto;
+    border-radius: 10px;
+  }
+
+  .modal .modal-content .moveimages .moreimg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal .modal-content .moveimages .moreimg .im {
+    width: 70px;
+    height: 70px;
+    margin: 5px;
+  }
+
+  .modal .product-details-container {
+    width: 100%;
+  }
+
+  .modal .close {
+    position: fixed;
+    top: -5px;
+    right: 0;
+    cursor: pointer;
+    font-size: 30px;
+    padding: 10px;
+  }
+}
